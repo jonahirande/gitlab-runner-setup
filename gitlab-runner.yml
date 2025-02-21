@@ -1,4 +1,3 @@
-
 gitlab_runner_url: 'https://gitlab.com/'
 gitlab_registration_token: 'glrt-t3_kqy6s4DyqRxt__L6CWBT'
 runner_description: 'My GitLab Runner'
