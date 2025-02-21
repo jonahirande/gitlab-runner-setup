@@ -1,0 +1,13 @@
+---
+- name: Install and configure GitLab Runner
+  hosts: worker
+  tasks:    
+    - name: Install GitLab Runner
+      apt:
+        name: gitlab-runner
+        state: present
+    - name: Start and enable GitLab Runner service
+      systemd:
+        name: gitlab-runner
+        state: started
+        enabled: yes
