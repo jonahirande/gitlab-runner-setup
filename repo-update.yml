@@ -1,6 +1,6 @@
 ---
 - name: Install and configure GitLab Runner
-  hosts: worker
+  hosts: 192.168.0.33
   vars_files:
     - dependencies.yml
 
@@ -8,7 +8,7 @@
     - name: Update apt repository
       apt:
         update_cache: yes
-        
+
     - name: Install dependencies
       apt:
         name:
