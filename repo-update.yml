@@ -1,0 +1,16 @@
+---
+- name: Install and configure GitLab Runner
+  hosts: worker
+  vars_files:
+    - dependencies.yml
+
+  tasks:
+    - name: Update apt repository
+      apt:
+        update_cache: yes
+        
+    - name: Install dependencies
+      apt:
+        name:
+          - "{{ dependencies }}"
+        state: present
