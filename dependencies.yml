@@ -1,0 +1,6 @@
+---
+dependencies:
+  - curl
+  - openssh-server
+  - ca-certificates
+  - gnupg
